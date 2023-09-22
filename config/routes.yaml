@@ -1,0 +1,25 @@
+add:
+    path: /api/shipping_address/{clientId}/add
+    controller: App\Controller\ShippingAddressController::add
+    methods: POST
+
+list:
+    path: /api/shipping_address/{clientId}/list
+    controller: App\Controller\ShippingAddressController::list
+    methods: GET
+
+edit:
+    path: /api/shipping_address/{clientId}/{shippingAddressId}/edit
+    controller: App\Controller\ShippingAddressController::edit
+    methods: PATCH
+
+default:
+    path: /api/shipping_address/{clientId}/{shippingAddressId}/default
+    controller: App\Controller\ShippingAddressController::default
+    methods: PATCH
+
+remove:
+    path: /api/shipping_address/{clientId}/{shippingAddressId}/remove
+    controller: App\Controller\ShippingAddressController::remove
+    methods: DELETE
+
